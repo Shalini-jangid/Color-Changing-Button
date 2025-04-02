@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUTTON</title>
+    <link rel="icon" href="https://t3.ftcdn.net/jpg/02/75/45/16/360_F_275451672_Cotom984pdxLalnwtLKwpLjH7TPYZJMc.jpg">
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            cursor: pointer;
+        }
+        .main{
+            height: 15vh;
+            width: 20vw;
+            text-align: center;
+            margin: auto;
+            margin-top: 35vh;
+        }
+        #btn{
+            padding: 10px;
+            font-size: 1rem;
+            background-color: black;
+            color: white;
+            width: auto;
+            border-radius: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+  <button id="btn">RED</button>
+    </div>
+</body>
+<script>
+    let btn = document.getElementById("btn")
+    condition=true;
+    btn.addEventListener("click",()=>{
+        if (condition) {
+            document.body.style="background:red"
+            btn.innerText="YELLOW"
+            condition=false;
+        }
+        else{
+            document.body.style="background:YELLOW"
+            btn.innerText="RED"
+            condition=true;
+        }
+    })
+</script>
+</html>
